@@ -1,0 +1,5 @@
+bucket_name    = "yourname-smart-backup"
+aws_profile    = "your-profile"
+aws_region     = "eu-central-1"
+backup_prefix  = "laptop"
+retention_days = 30

@@ -1,7 +1,7 @@
 variable "aws_profile" {
   description = "AWS profile"
   type        = string
-  default     = "lioren"
+  default     = null
 }
 variable "bucket_name" {
   description = "AWS bucket"
@@ -16,9 +16,9 @@ variable "retention_days" {
   description = "AWS retention days"
   type        = number
   default     = 30
-      validation {
-        condition     = var.retention_days > 0
-        error_message = "retention_days must be greater than 0."
+  validation {
+    condition     = var.retention_days > 0
+    error_message = "retention_days must be greater than 0."
   }
 }
 variable "iam_user_name" {
