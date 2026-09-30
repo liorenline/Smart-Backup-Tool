@@ -1,0 +1,17 @@
+name: backup_configs
+
+paths:
+  - ~/.ssh/config
+
+ignore:
+  - .git
+  - node_modules
+  - __pycache__
+  - .venv
+  - .DS_Store
+
+s3:
+  bucket: lioren-smart-backup
+  prefix: laptop
+  profile: smart-backup
+  region: eu-central-1
